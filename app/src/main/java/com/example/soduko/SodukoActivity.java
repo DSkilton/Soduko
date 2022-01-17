@@ -3,6 +3,7 @@ package com.example.soduko;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -10,6 +11,11 @@ import android.view.View.OnClickListener;
 public class SodukoActivity extends Activity implements OnClickListener {
 
     private static final String TAG = "Soduko";
+
+    private void startGame(int i){
+        Log.d(TAG, "clicked on" + i);
+        Intent intent = new Intent(this, Game.class);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
