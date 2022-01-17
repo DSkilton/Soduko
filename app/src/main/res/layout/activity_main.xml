@@ -20,8 +20,19 @@
             android:layout_gravity="center"
             android:textSize="25sp"/>
 
-        
+        <Button
+            android:id="@+id/new_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="New Game"/>
 
+        <Button
+            android:id="@+id/about_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="About " />
+
+        
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
