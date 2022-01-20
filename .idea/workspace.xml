@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85eba326-6fb8-4a6c-a110-0d4bcd573510" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/soduko/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/soduko/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,7 +36,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="23xgj1pGhyVhz0unIikPJWpj8Qq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
