@@ -30,4 +30,6 @@ public class PuzzleView extends View {
         Log.d(TAG, "onSizeChanged: width" + width + ", height " + height);
         super.onSizeChanged(w, h , oldW, oldH);
     }
+
+
 }
