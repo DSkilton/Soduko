@@ -1,4 +1,4 @@
-package com.example.soduko;
+package com.example.sudoku;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.View;
 
 public class PuzzleView extends View {
-    public static final String TAG = "Soduko";
+    public static final String TAG = "Sudoku";
     private int[] flag;
     private final Game game;
     private float width, height;

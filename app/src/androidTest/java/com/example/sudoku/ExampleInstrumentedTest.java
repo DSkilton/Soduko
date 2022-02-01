@@ -1,4 +1,4 @@
-package com.example.soduko;
+package com.example.sudoku;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

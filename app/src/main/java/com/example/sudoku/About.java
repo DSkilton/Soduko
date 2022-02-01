@@ -1,4 +1,4 @@
-package com.example.soduko;
+package com.example.sudoku;
 
 import android.app.Activity;
 import android.os.Bundle;
