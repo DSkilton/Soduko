@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 
@@ -73,6 +74,23 @@ public class PuzzleView extends View {
             canvas.drawLine(i * width + 1, 0, i * width + 1, getHeight(), hilite);
         }
 
+        Paint foreground = new Paint(Paint.ANTI_ALIAS_FLAG);
+        foreground.setColor(getResources().getColor(R.color.puzzle_foreground));
+        foreground.setStyle(Paint.Style.FILL);
+        foreground.setTextSize(height * 0.75f);
+        foreground.setTextScaleX(width / height);
+        foreground.setTextAlign(Paint.Align.CENTER); //Draws number in center of tile
+        Paint.FontMetrics fontMetrics = foreground.getFontMetrics();
+
+        float x = width / 2;
+        float y = height / 2 - (fontMetrics.ascent + fontMetrics.ascent) / 2;
+
+        for(int i = 0; i < 9; i++){
+            for(int j = 0; j < 9; j++){
+                canvas.drawText(String.valueOf(this.game.getTileString(i, j)), i * width + x, j * height + y, foreground);
+            }
+
+        }
 
     }
 
