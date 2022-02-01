@@ -1,14 +1,19 @@
 package com.example.sudoku;
 
 import android.app.Activity;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Log;
 
 public class Game extends Activity {
-    public static final String TAG = "Soduko";
+    private static final String TAG = "Soduko";
+    public static final String KEY_DIFFICULTY = "com.example.soduko.difficulty";
     public static final int DIFFICULTY_EASY = 0;
+    public static final int DIFFICULTY_MEDIUM = 1;
+    public static final int DIFFICULTY_HARD = 2;
 
-    private int puzzle[];
+    private int puzzle[] = new int[9 * 9];
     private int flag[];
 
     private final static String easyPuzzle = "000010000";
@@ -19,13 +24,27 @@ public class Game extends Activity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         Log.d(TAG,"onCreate");
-        puzzleView = getPuzzle();
-        flag = getPuzzle();
+
+        int diff = getIntent().getIntExtra(KEY_DIFFICULTY, DIFFICULTY_EASY);
+        puzzle = getPuzzle(diff);
         calculateUsedTiles();
+
         puzzleView = new PuzzleView(this);
         setContentView(puzzleView);
         puzzleView.requestFocus();
+    }
 
+    private void calculateUsedTiles(){
+        Log.d(TAG, "Game# CalculateUsedTiles is not implemented yet");
+    }
+
+    private int[] getPuzzle(int diff){
+        Log.d(TAG, "Game# getPuzzle is not implemented yet");
+        return new int [9 * 9];
+    }
+
+    public int getTileString(int x, int y){
+        return puzzle[y * 9 + x];
     }
 
 }
