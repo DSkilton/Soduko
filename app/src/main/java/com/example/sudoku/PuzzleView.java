@@ -73,7 +73,7 @@ public class PuzzleView extends View {
             canvas.drawLine(i * width + 1, 0, i * width + 1, getHeight(), hilite);
         }
 
-        
+
     }
 
 }
