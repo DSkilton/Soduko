@@ -5,7 +5,7 @@
     <string name="new_game_label">New Game</string>
     <string name="about_label">About</string>
     <string name="exit_label">Exit</string>
-    <string name="settings_label">Settings...</string>
+    <string name="settings_label">Settings…</string>
     <string name="settings_title">Soduko settings</string>
     <string name="settings_shortcut">s</string>
     <string name="music_title">Music</string>
@@ -29,6 +29,7 @@
     <string name="no_moves_lable">No moves</string>
     <string name="wrong_position_lable">Wrong position</string>
     <string name="keypad_title">Keypad</string>
-
-
+    
+    <string name="hints_title">Hints</string>
+    <string name="hints_summary">Show hints during play</string>
 </resources>
